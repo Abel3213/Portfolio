@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+html {
+  --top-spacing: 100px;
+  scroll-padding-top: var(--top-spacing);
+}
+
+
 a, a:visited, a:hover, a:active {
     color: inherit;
   }
@@ -14,15 +20,20 @@ a, a:visited, a:hover, a:active {
 
 body {
     font-family: Helvetica, Arial, sans-serif;
+    margin: var(--top-spacing) auto;
   }
 
   header {
-    padding: 20px 35px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    z-index: 9999;
     align-items: baseline;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px
 }
 
 header h1 {
