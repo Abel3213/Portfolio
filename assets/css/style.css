@@ -19,7 +19,7 @@ body {
   header {
     padding: 20px 35px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     z-index: 9999;
     align-items: baseline;
@@ -52,7 +52,7 @@ header nav {
   header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 2.55vw;
 }
 
 .about-me {
@@ -147,4 +147,38 @@ header nav {
     text-align: center;
     margin: 0 auto 35px auto;
     width: 50%;
+}
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+  
+.section-title {
+    width: 95%;
+}
+ 
+.website-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.main-project {
+    width: 95%;
+}
+  
+.my-img {
+    flex: 0 100%;
+}
+  
+.contact-info {
+    text-align: center;
+}
+  
+.contact-info > * {
+    flex: 0 100%;
+}
+  
+.contact-links {
+    order: 3;
+  }
 }
