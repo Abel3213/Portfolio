@@ -52,7 +52,7 @@ header nav {
   header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 2.55vw;
+    font-size: 1.55vw;
 }
 
 .about-me {
@@ -120,6 +120,10 @@ header nav {
     margin: 30px;
 }
 
+.side-projects img {
+    width: 40%;
+}
+
 .contact-info {
     margin-top: 50px;
 }
@@ -149,9 +153,58 @@ header nav {
     width: 50%;
 }
   
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+  @media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .about-me p, .about-me {
+      width: 100%;
+    }
+    
+    .about-me p {
+      text-align: center;
+    }
+  
+    .section-title {
+      width: 80%;
+    }
+    
+  }
+
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
-  
+
+
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 2.55vw;
+}
+
 .section-title {
     width: 95%;
 }
@@ -179,6 +232,7 @@ header nav {
 }
   
 .contact-links {
-    order: 3;
+    display: flex;
+    flex-direction: column;
   }
 }
