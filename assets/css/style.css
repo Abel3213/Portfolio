@@ -91,6 +91,10 @@ header nav {
     color: var(--black);
 }
 
+.description p {
+  font-size: 30px;
+}
+
 .my-img {
     box-sizing: border-box;
     width: 40%;
